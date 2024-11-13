@@ -1,4 +1,7 @@
 import "./styles.css";
-import { greeting } from "./greeting.js";
+import { renderHomePage } from "./home";
 
-console.log(greeting);
+document.addEventListener("DOMContentLoaded", () => renderHomePage());
+
+const homeButton = document.getElementById("home-button");
+homeButton.addEventListener("click", () => renderHomePage());
