@@ -1,5 +1,3 @@
-import "./styles.css";
-
 {/* <div id="home-page">
         <div id="hp-header">
             <h2>Tea and Pilaf</h2>
@@ -10,6 +8,8 @@ import "./styles.css";
 function renderHomePage() {
     const contentSection = document.getElementById("content");
     contentSection.replaceChildren();
+
+    document.body.classList.remove("body-menu-page");
 
     const homePage = document.createElement("div");
     homePage.id = "home-page";

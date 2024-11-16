@@ -10,7 +10,9 @@ body {
     position: relative;
 }
 
-header {
+/* home page styles */
+
+.home-header {
     position: absolute;
     width: 100%;
     height: 13vh;
@@ -43,7 +45,7 @@ button {
     font-size: 1.6em;
     border: none;
     background-color: transparent;
-    font-family: 'Eagle Lake';
+    font-family: 'Eagle Lake', Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: white;
     transition: transform 0.3s ease;
@@ -66,7 +68,7 @@ button:hover {
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
-    font-family: 'Eagle Lake';
+    font-family: 'Eagle Lake', Arial, Helvetica, sans-serif;
     color: white;
     display: flex;
     flex-direction: column;
@@ -98,6 +100,100 @@ button:hover {
     font-size: 2em;
 }
 
+/* menu page styles */
+
+.body-menu-page {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 10vh;
+    height: max-content;
+}
+
+#header-menu-page {
+    background: #000;
+    width: 100%;
+    height: 35vh;
+    background-image: url('./images/plates.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 70%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+#menu-page {
+    width: 80vw;
+    margin: auto;
+}
+
+#menu-page > h2 {
+    font-family: 'Eagle Lake', Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+#menu-page section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-page img {
+    height: 40vh;
+    width: auto;
+    max-width: 80vw;
+    border-radius: 10px;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+.odd img {
+    margin-left: 2vw;
+}
+
+.even img {
+    margin-right: 2vw;
+}
+
+#menu-page img:hover {
+    scale: 1.02;
+}
+
+#menu-page .text h4 {
+    font-family: 'Eagle Lake', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+#menu-page .text p {
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    #menu-page section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #menu-page section:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    #menu-page section:not(:first-of-type) {
+        margin-top: 10vh;
+    }
+
+    #menu-page .text {
+        width: 500px;
+        max-width: 80vw;
+    }
+}
+
 @media (max-width: 500px) {
     nav {
         justify-content: center;
@@ -113,5 +209,10 @@ button:hover {
     
     #home-page p {
         font-size: 1.8em;
+    }
+
+    #menu-page img {
+        width: 80vw;
+        height: auto;
     }
 }
