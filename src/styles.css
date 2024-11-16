@@ -172,6 +172,49 @@ button:hover {
     margin-bottom: 10px;
 }
 
+/* about page styles */
+
+#about-page {
+    width: 1200px;
+    max-width: 85vw;
+    margin: auto;
+}
+
+#about-page h2 {
+    font-family: 'Eagle Lake', Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+#about-page p {
+    text-align: left;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+}
+
+#about-page-introduction {
+    margin-bottom: 5vh;
+}
+
+#about-page-introduction p {
+    text-align: center;
+    text-indent: 50px;
+}
+
+#about-page-contact-program-container {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+#about-page-contact-program-container h3 {
+    font-size: 1.4em;
+    font-family: 'Eagle Lake', Arial, Helvetica, sans-serif;
+    margin-bottom: 2px;
+}
+
 @media (max-width: 1000px) {
     #menu-page section {
         display: flex;
@@ -191,6 +234,29 @@ button:hover {
     #menu-page .text {
         width: 500px;
         max-width: 80vw;
+    }
+
+    
+}
+
+@media (max-width: 800px) {
+    #about-page-contact-program-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+        width: max-content;
+        margin: auto;
+        max-width: 85vw;
+    }
+
+    #about-page-contact-program-container h3 {
+        text-align: center;
+    }
+
+    #about-page-contact-program-container p {
+        text-align: center;
     }
 }
 
