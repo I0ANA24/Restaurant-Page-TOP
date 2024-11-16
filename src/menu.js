@@ -182,25 +182,6 @@ function renderMenuPage() {
     const text3img = document.createElement("img");
     text3img.src = img3;
     sectionPage3.appendChild(text3img);
-
-    
-
-    // const homePage = document.createElement("div");
-    // homePage.id = "home-page";
-
-    // const hpHeader = document.createElement("div");
-    // hpHeader.id = "hp-header";
-
-    // const h2 = document.createElement("h2");
-    // h2.innerHTML = "Tea and Pilaf";
-
-    // const p = document.createElement("p");
-    // p.textContent = "Book table";
-
-    // contentSection.appendChild(homePage);
-    // homePage.appendChild(hpHeader);
-    // hpHeader.appendChild(h2);
-    // hpHeader.appendChild(p);
 }
 
 export { renderMenuPage };
